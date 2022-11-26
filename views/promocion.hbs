@@ -1,13 +1,61 @@
-<div>
-    <h3>promocion</h3>
-    <div>
+<html>
+<head> <title> area de un triangulo </title> </head>
+<center> <h1> Calcula el area de un triangulo </h1>
+<body bgcolor="red">
+<script language="javascript">
+
+function Area()
+        {
+     var area, base, altura;
+            base = prompt("Coloca la base");
+            altura = prompt("Coloca la altura");
+
+            base = parseInt(base);
+            altura = parseInt(altura);
+            area = (base * altura)/2;
+
+            alert("El area del cuadrado es:" +area);
+        }
+    </script>
+  <form name="form1">
+      <input type="button" value="calcular" onclick=Area()>
+   </form>
+   </center>
+
+  </body>
+</html>
 
 
-
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/WdY5IlplJJs" title="NUEVA COLECCION Autos Inolvidables 1/24 de Editorial Salvat Mexico" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
-   
-   
-    </div>
+<h3>Área de un triángulo rectángulo</h3>
+<div class="col-md-4">
+  <input type="number" id="base" placeholder="Base" class="form-control">
+  <input type="number" id="altura" placeholder="Altura" class="form-control">
+  <button onclick="obtenerArea()" class="btn">Calcular área</button>
+</div>
+<div class="col-md-4">
+  <label>Área: </label>
+  <div id="areaResultado">
+  </div>
+  <br>
+  <textarea id="textarea1" class="form-control"></textarea>
 </div>
 
-    <footer><strong>Copyright © Todos los derechos reservados 2022 diseñado por": Axel  Tautiu cosigua </strong></footer>
+
+
+
+
+<h3>Área de un triángulo rectángulo</h3>
+<div class="col-md-4">
+  <input type="number" id="base" placeholder="Base" class="form-control">
+  <input type="number" id="altura" placeholder="Altura" class="form-control">
+  <button onclick="obtenerArea()" class="btn">Calcular área</button>
+</div>
+<div class="col-md-4">
+  <label>Área: </label>
+  <div id="areaResultado">
+  </div>
+  <br>
+  <textarea id="textarea1" class="form-control"></textarea>
+</div>
+
+       <footer><strong>Copyright © Todos los derechos reservados 2022 diseñado por": Axel  Tautiu cosigua  carnet 2290-19-14547</strong></footer>

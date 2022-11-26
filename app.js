@@ -28,6 +28,10 @@ class Server{
         this.app.get('/',(req,res)=>{
             res.render('index')
         })
+
+        this.app.get('/',(req,res)=>{
+            res.render('a')
+        })
         this.app.get('/modelo',(req,res)=>{
             res.render('modelo')
         })
@@ -43,3 +47,16 @@ class Server{
     }
 }
 module.exports = Server;
+
+
+function obtenerArea() {
+    var areaResultado = document.getElementById("areaResultado");
+    var textResultado = document.getElementById("textarea1");
+    var b = parseInt(document.getElementById("base").value);
+    var h = parseInt(document.getElementById("altura").value);
+  
+    var area = b * h / 2;
+  
+    areaResultado.innerHTML = "" + area;
+    textResultado.value = area;
+  }
